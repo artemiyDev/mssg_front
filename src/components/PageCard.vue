@@ -1,10 +1,12 @@
 <template>
-  <div class="page-card">
-    <div class="p-3">
-      <h2 class="page-card-title">{{ pageName }}</h2>
-      <span class="page-card-title">{{ pageSlug }}</span>
+  <a class="text-decoration-none" href="http://example.com">
+    <div class="page-card">
+      <div class="p-3">
+        <h2 class="page-card-title">{{ pageName }}</h2>
+        <span class="page-card-title">{{ pageSlug }}</span>
+      </div>
     </div>
-  </div>
+  </a>
 </template>
 
 <script>
@@ -35,7 +37,7 @@ export default {
 
 .page-card-title {
   display: flex;
-  justify-content: start;
+  justify-content: flex-start;
   /*right: -21.13%;*/
   /*top: 27.5%;*/
   /*bottom: 25%;*/

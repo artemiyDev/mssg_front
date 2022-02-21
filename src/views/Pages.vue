@@ -8,7 +8,7 @@
       </b-row>
       <b-row class="justify-content-center my-5">
         <b-col cols="1">
-          <b-button variant="primary">Add page</b-button>
+          <CreatingPageModal/>
         </b-col>
       </b-row>
     </div>
@@ -16,11 +16,14 @@
 </template>
 <script>
 import PageCard from "@/components/PageCard";
+import CreatingPageModal from "@/components/CreatingPageModal";
 
 export default {
-  components: {PageCard},
+  components: {CreatingPageModal, PageCard},
   data() {
-    return {}
+    return {
+
+    }
   },
   computed: {
     pages() {
