@@ -9,18 +9,6 @@
         </b-col>
       </b-row>
     </b-container>
-    <!--    <div class="login-page">-->
-    <!--      <div class="container">-->
-    <!--        <div class="row">-->
-    <!--          <form class="form-group">-->
-    <!--            <input v-model="username" type="email" class="form-control" placeholder="Email" required>-->
-    <!--            <input v-model="password" type="password" class="form-control" placeholder="Password" required>-->
-    <!--            <input type="submit" class="btn btn-primary" @click="login">-->
-    <!--          </form>-->
-
-    <!--        </div>-->
-    <!--      </div>-->
-    <!--    </div>-->
   </div>
 </template>
 

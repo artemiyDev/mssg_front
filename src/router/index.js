@@ -12,7 +12,7 @@ const routes = [
         name: 'Home',
         component: Home,
         meta: {
-            public: false,
+            public: true,
         },
     },
     {
