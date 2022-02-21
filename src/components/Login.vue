@@ -37,14 +37,14 @@ export default {
     isAuthenticated(isAuthenticated) {
       console.log(123)
       if (isAuthenticated) {
-        this.$router.push("/");
+        this.$router.push("/pages");
         console.log(123)
       }
     },
   },
   created() {
     if (this.isAuthenticated) {
-      this.$router.push("/");
+      this.$router.push("/pages");
       return;
     }
   }

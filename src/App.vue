@@ -26,6 +26,10 @@
 #nav a.router-link-exact-active {
   color: #42b983;
 }
+
+html, body{
+  overflow-y: hidden;
+}
 </style>
 <script>
 import Navbar from "@/components/Navbar";

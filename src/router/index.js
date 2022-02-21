@@ -2,6 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import Login from '../components/Login'
+import Pages from '../views/Pages'
 import store from "@/store";
 
 Vue.use(VueRouter)
@@ -13,6 +14,14 @@ const routes = [
         component: Home,
         meta: {
             public: true,
+        },
+    },
+    {
+        path: '/pages',
+        name: 'Pages',
+        component: Pages,
+        meta: {
+            public: false,
         },
     },
     {
