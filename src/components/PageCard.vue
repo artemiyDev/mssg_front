@@ -1,10 +1,8 @@
 <template>
   <a class="text-decoration-none" href="http://example.com">
-    <div class="page-card">
-      <div class="p-3">
+    <div class="page-card m-3 p-3">
         <h2 class="page-card-title">{{ pageName }}</h2>
         <span class="page-card-title">{{ pageSlug }}</span>
-      </div>
     </div>
   </a>
 </template>
@@ -23,14 +21,12 @@ export default {
 
 <style>
 .page-card {
-  min-width: 287px;
-  max-width: 287px;
-  min-height: 100px;
-  max-height: 100px;
+  width: 200px;
+  display: flex;
   background: #222D35;
   box-shadow: 0 0 0 1px #30393F;
   border-radius: 6px;
-  display: flex;
+
   flex-direction: column;
   justify-content: space-evenly;
 }
@@ -38,15 +34,6 @@ export default {
 .page-card-title {
   display: flex;
   justify-content: flex-start;
-  /*right: -21.13%;*/
-  /*top: 27.5%;*/
-  /*bottom: 25%;*/
-  /*display: flex;*/
-  /*align-items: center;*/
-
-
-  /* Color States/Common/Black */
-
   color: #F2F2F2;
 }
 </style>

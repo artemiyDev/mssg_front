@@ -27,9 +27,16 @@
   color: #42b983;
 }
 
-html, body{
-  overflow-y: hidden;
-}
+/*body::-webkit-scrollbar {*/
+/*  display: none; !* for Chrome, Safari, and Opera *!*/
+/*}*/
+
+/*body {*/
+/*  -ms-overflow-style: none; !* for Internet Explorer, Edge *!*/
+/*  scrollbar-width: none; !* for Firefox *!*/
+/*  overflow-y: scroll;*/
+/*}*/
+
 </style>
 <script>
 import Navbar from "@/components/Navbar";
