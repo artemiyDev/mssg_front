@@ -3,6 +3,7 @@ import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import Login from '../components/Login'
 import Pages from '../views/Pages'
+import Page from '../views/Page'
 import store from "@/store";
 
 Vue.use(VueRouter)
@@ -20,6 +21,14 @@ const routes = [
         path: '/pages',
         name: 'Pages',
         component: Pages,
+        meta: {
+            public: false,
+        },
+    },
+    {
+        path: '/page/:slug',
+        name: 'Page',
+        component: Page,
         meta: {
             public: false,
         },

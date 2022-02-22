@@ -13,6 +13,7 @@
 </template>
 <script>
 import axios from "../api/backend";
+import router from "@/router";
 
 export default {
   data() {
@@ -35,9 +36,15 @@ export default {
   },
   methods: {
     async checkSlugExists() {
-      await axios.post('api/v1/pages/create/attempt/', {"slug": this.slug})
+      await axios.post('/api/v1/pages/create/attempt/', {"slug": this.slug})
           .then(response => {
             this.slugExists = !response.data.ok;
+          })
+    },
+    async createPage() {
+      await axios.post('/api/v1/pages/create/', {"slug": this.slug, "name": this.name})
+          .then(response => {
+            router.push(`page/${response.data.slug}`)
           })
     }
     ,
@@ -47,6 +54,7 @@ export default {
       if (!this.slugExists) {
         this.$nextTick(() => {
           this.$bvModal.hide('page-create-modal')
+          this.createPage()
         })
       }
 
