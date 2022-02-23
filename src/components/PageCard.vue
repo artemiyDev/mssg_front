@@ -1,10 +1,10 @@
 <template>
-  <a class="text-decoration-none" href="http://example.com">
+  <router-link :to="{ name: 'Page', params: { slug: pageSlug }}"  class="text-decoration-none">
     <div class="page-card m-3 p-3">
         <h2 class="page-card-title">{{ pageName }}</h2>
-        <span class="page-card-title">{{ pageSlug }}</span>
+        <span class="page-card-title">{{ `mssg.me/${pageSlug}` }}</span>
     </div>
-  </a>
+  </router-link>
 </template>
 
 <script>

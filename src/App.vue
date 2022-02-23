@@ -12,11 +12,11 @@
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+  background-color: #f7f7fa;
 }
 
-#nav {
-  padding: 30px;
-}
+
+
 
 #nav a {
   font-weight: bold;
@@ -40,6 +40,7 @@
 </style>
 <script>
 import Navbar from "@/components/Navbar";
+
 export default {
   components: {Navbar}
 }
